@@ -35,8 +35,8 @@ Alidayu.send_text_message({
   SignName: 'sms signe name',
   TemplateCode: 'sms template code'})
 ```
-alidayu using a protocal 'POP' create by themself, so you also an using this gem to sign you params
-according to [official guide](https://help.aliyun.com/document_detail/56189.html?spm=5176.doc55284.6.567.wG44n1) . there is example for signature, this is params:
+alidayu using a protocal 'POP' create by themself, so you also an using this gem to sign you params.
+According to [official guide](https://help.aliyun.com/document_detail/56189.html?spm=5176.doc55284.6.567.wG44n1) . there is example for signature, this is params:
 ```ruby
   signature_params = {
     Timestamp: '2017-07-12T02:42:19Z',
@@ -53,9 +53,7 @@ according to [official guide](https://help.aliyun.com/document_detail/56189.html
     Format: 'XML',
     OutId: '123'}
 ```
-signature is ```ruby
-zJDF+Lrzhj/ThnlvIToysFRq6t4=
-```
+signature is ```zJDF+Lrzhj/ThnlvIToysFRq6t4=```
 ```ruby
   Alidayu.access_key_id = 'testId'
   Alidayu.access_key_secrete = 'testSecret'
