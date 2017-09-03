@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Step 1. Set you accsess key id and access secrete
+```ruby
+  Alidayu.access_key_id = 'YOUR ACCESS KEY ID'
+  Alidayu.access_key_secrete = 'YOUR ACCESS KEY SECRET'
+```
+Step 2. send text message
+```ruby
+Alidayu.send_text_message({
+  PhoneNumbers: 'xxxxxxx',
+  TemplateParam: {code: '1234'},//accroding to template you set, for example my template content is '您的验证码${code}', the message you receive is 您的验证码1234
+  SignName: 'sms signe name',
+  TemplateCode: 'sms template code'})
+```
 
 ## Development
 
